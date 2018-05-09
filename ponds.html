@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #578ca9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "verdana";
+}
+body {margin:0;}
+
+.navbar a:hover {
+  background: #053558;
+  color: #074c7e;
+  font-family: "verdana";
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+p {
+	color: #004d00;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="pools.html">Pools</a>
+  <a href="ponds.html">Ponds</a>
+  <a href="toys.html">Accessories</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+<title> The Swamp Frog </title>
+<br>
+<br>
+<div class="w3-content w3-section" style="max-width:1423px">
+  <img class="mySlides" src="Gallery/Pic1logo.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo3.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 150); // Change image 1 second: 1000
+}
+</script>
+<h1> Pond Concepts </h1>
+<table>
+  <tr>
+    <th class="th3" > <img class="toypic" src="Gallery/PondPic1.jpg" alt="A picture of my friends and I" width="660" height="367"></th>
+    <th class="th3" > <img class="toypic" src="Gallery/PondPic2.jpg" alt="A picture of my friends and I" width="660" height="367"></th> 
+  </tr>
+  <tr>
+    <td class="td3" > Complete pond, natural pond concept enclosed in trees. </td>
+    <td class="td3" > Large pond with a nice deck attached to shore. </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th class="th3" > <img class="toypic" src="Gallery/PondPic3.jpg" alt="A picture of my friends and I" width="660" height="367"></th>
+    <th class="th3" > <img class="toypic" src="Gallery/PondPic4.jpg" alt="A picture of my friends and I" width="660" height="367"></th> 
+  </tr>
+  <tr>
+    <td class="td3" > Brick wall creating a waterfall into the pond full of plants. </td>
+    <td class="td3" > Artificial pond with a fountain<br>(premium option). </td>
+  </tr>
+</table>
+<p class="info"> All pond concepts will be priced by a surveyor, on the site of the future pond.
+For business inquiries, visit the contact us page to receive a price estimator. </p>
+</html>

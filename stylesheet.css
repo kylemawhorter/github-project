@@ -1,0 +1,158 @@
+body {
+	background-color:#ffffff;
+}
+h1 {
+	color: #578ca9;
+	font-size: 80px;
+	font-family: "tahoma";
+	text-align: center;
+}
+h2 {
+	color: #578ca9;
+	font-size: 80px;
+	font-family: "tahoma";
+	text-align: center;
+}
+h3 {
+	color: #578ca9;
+	font-size: 80px;
+	font-family: "tahoma";
+	text-align: center;
+}
+h4 {
+	color: #578ca9;
+	font-size: 80px;
+	font-family: "tahoma";
+	text-align: center;
+}
+p {
+	color: #578ca9;
+	font-size: 20px;
+	font-family: "verdana";
+	margin-left: 5px;
+}
+#ptable {
+	color: #fff;
+	font-size: 40px;
+	font-family: "tahoma";
+	margin-left: 10px;
+}
+.para1 {
+	color: #fff;
+	font-size: 50px;
+	font-family: "verdana";
+    border: 7px solid white;
+    padding: 25px;
+	background-color: #053558;
+    margin: 25px;
+}
+.homepic1 {
+	margin-left:30px;
+	margin-right:10px;
+	padding: 15px;
+	background-color: #578ca9;
+	border: 5px solid white;
+	float:left;
+}
+.toypic {
+	border: 5px solid #578ca9;
+	float:left;
+	margin-left: 10px;
+}
+.pondpic1 {
+	margin-left:30px;
+	margin-right:10px;
+	padding: 15px;
+	background-color: #004d00;
+	border: 5px solid white;
+	float:left;
+}
+.pondpic2 {
+	margin-left:30px;
+	margin-right:10px;
+	padding: 15px;
+	background-color: #004d00;
+	border: 5px solid white;
+	float:left;
+}
+.homepic2 {
+	margin-left:10px;
+	margin-right:50px;
+	padding: 15px;
+	background-color: #578ca9;
+	border: 5px solid white;
+	float:left;
+}
+.bkg1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+	
+table {
+    border-collapse: collapse;
+    width: 99%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	background-color: #053558;
+	color: #ffffff;
+}
+
+tr:{background-color: #042e4b}
+
+th {
+    background-color: #578ca9;
+    color: white;
+	font-size: 30px;
+}
+.th2 {
+	background-color: #004d00;
+    color: white;
+	font-size: 30px;
+}
+.th3 {
+	background-color: #ffffff;
+	color:white;
+	font-size: 30px;
+	margin-left: 10px;
+}
+.td3 {
+	background-color: #ffffff;
+	color: #578ca9;
+	font-size: 30px;
+	font-family: "verdana";
+	text-align:center;
+}
+.aboutus {
+	background-color: #578ca9;
+    color: white;
+	font-size: 40px;
+}
+p2 {
+	color: 004d00;
+}
+caption {
+	color: #578ca9;
+	font-size: 80px;
+	font-family: "tahoma";
+	text-align: center;
+}	
+.info {
+	border: 3px solid #578ca9;
+	font-size: 35px;
+	font-family: "verdana";
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #578ca9;
+}
+.contact {
+	font-size: 15px;
+	font-family: "verdana";
+	color: #578ca9;
+	margin-left:10px;
+}

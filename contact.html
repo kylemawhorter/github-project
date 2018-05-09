@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #578ca9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "verdana";
+}
+body {margin:0;}
+
+.navbar a:hover {
+  background: #053558;
+  color: #074c7e;
+  font-family: "verdana";
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+p {
+	color: #004d00;
+}
+/* unvisited link */
+a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #578ca9;
+}
+
+/* selected link */
+a:active {
+    color: #ffffff;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="pools.html">Pools</a>
+  <a href="ponds.html">Ponds</a>
+  <a href="toys.html">Accessories</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+<title> Contact Us </title>
+<br>
+<br>
+<div class="w3-content w3-section" style="max-width:1423px">
+  <img class="mySlides" src="Gallery/Pic1logo.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo3.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 150); // Change image 1 second: 1000
+}
+</script>
+<h1> Contact Us </h1>
+<div>
+  <form action="/action_page.php">
+    <label class="contact" for="fname"><b>First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label class="contact" for="lname"><b>Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+	<label class="contact" for="fname"><b>Zip Code</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your zip code">
+
+    <label class="contact" for="lname"><b>Phone Number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your phone number">
+  
+    <button onclick="myPopup()">Javascript Pop-Up</button>
+  </form>
+  <script>
+function myPopup() {
+    alert("Click OK if you like this website");
+}
+</script>
+</html>

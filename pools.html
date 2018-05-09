@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #578ca9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "verdana";
+}
+body {margin:0;}
+
+.navbar a:hover {
+  background: #053558;
+  color: #074c7e;
+  font-family: "verdana";
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+.mySlides {
+display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="pools.html">Pools</a>
+  <a href="ponds.html">Ponds</a>
+  <a href="toys.html">Accessories</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+<title> The Swamp Frog </title>
+<br>
+<br>
+<div class="w3-content w3-section" style="max-width:1423px">
+  <img class="mySlides" src="Gallery/Pic1logo.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo3.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 150); // Change image 1 second: 1000
+}
+</script>
+<h1> Pool Concepts For Sale </h1>
+<img class="homepic1" src="Gallery/PoolPic1.jpg" alt="A picture of my friends and I" width="600" height="334">
+<img class="homepic2" src="Gallery/PoolPic2.jpg" alt="A picture of my friends and I" width="600" height="334">
+<table style="width:95%; margin-left: 30x";>
+  <tr>
+    <th>Partial deck with stone landscaping finish <br>($4,000) </th>
+    <th> Simple pool and landscape design <br>($2,500) </th> 
+</table>
+<img class="homepic1" src="Gallery/PoolPic3.jpg" alt="A picture of my friends and I" width="600" height="334">
+<img class="homepic2" src="Gallery/PoolPic4.jpg" alt="A picture of my friends and I" width="600" height="334">
+<table style="width:98%">
+  <tr>
+    <th>Half-deck style with a fenced pool wall <br>($6,000) </th>
+    <th> Full deck design with a fully enclosed pool <br>($8,000) </th> 
+</table>
+<p class="info"> All pool concepts are sold with the construction of the pool decks.
+All pools sold have warranties that protect the costumer from all aspects
+of damage. That's why we swamp the competition! </p>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #578ca9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "verdana";
+}
+body {margin:0;}
+
+.navbar a:hover {
+  background: #053558;
+  color: #074c7e;
+  font-family: "verdana";
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="pools.html">Pools</a>
+  <a href="ponds.html">Ponds</a>
+  <a href="toys.html">Accessories</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+<title> The Swamp Frog </title>
+</head>
+<body>
+<br>
+<br>
+<div class="w3-content w3-section" style="max-width:1423px">
+  <img class="mySlides" src="Gallery/Pic1logo.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo3.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo2.png" style="width:100%">
+  <img class="mySlides" src="Gallery/Pic1logo1.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 150); // Change image every 2 seconds
+}
+</script>
+<h1> About Us</h1>
+<table>
+  <tr>
+    <th class="aboutus">The Swamp Frog is a business located in <br> Northeast Indiana, centered in Ligonier. <br>
+We specialize in summer fun, and the sale <br> of all things summer. Everything from
+pools <br> to ponds; lakes to inflatable rafts. </th>
+    <th>
+	List Of Products
+	<ul>
+  <li>Pools</li>
+  <li>Lakes</li>
+  <li>Ponds</li>
+  <li>Pool Toys</li>
+  <li>Pool Care Products</li>
+  <li>Poolside Fun</li>
+</ul>
+</th> 
+  </tr>
+</table>
+</html>
